@@ -4,15 +4,28 @@ using namespace std;
 
 int main()
 {
+/**
+ *Unit tests for the Login class.
+ *
+ * This class tests:
+ * Username validation
+ * Password complexity vlidation
+ * Cell phone format validation
+ * Login functionality ( success and failure cases)
+ */
  public class LoginTest {
-
+//Create Login object to be used in all test cases
     Login login = new Login();
 
     @Test
     public void testUsernameCorrectlyFormatted() {
         assertTrue(login.checkUserName("kyl_1"));
     }
-
+/**
+*Test that an correctly Formatted username passes validation.
+*/
+Must contain"_"and be <=s characters
+ */
     @Test
     public void testUsernameIncorrectlyFormatted() {
         assertFalse(login.checkUserName("kyle!!!!!!"));
